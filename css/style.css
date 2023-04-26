@@ -18,13 +18,170 @@ html {
   font-size: 62.5%;
 }
 
-/* body { */
-/* font-family: "Red Hat Text", sans-serif; */
-/* background-color: #191a24; */
-/* background-color: #1e1f29; */
-/* background-image: url(../images/bg-stars.svg); */
-/* } */
+body {
+  font-family: "Red Hat Text", sans-serif;
+  background-color: #191a24;
+  /* background-color: #1e1f29; */
+  background-image: url(../images/bg-stars.svg);
+}
 
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.countdown__container {
+  padding-top: 10rem;
+  background-image: url(../images/bg-stars.svg);
+  display: flex;
+  flex-direction: column;
+
+  gap: 6rem;
+}
+
+.input__box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.secondary__heading {
+  font-size: 1.2rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+.box {
+  /* background-color: #fb6087; */
+  display: flex;
+  justify-content: center;
+
+  /* gap: 2rem; */
+}
+
+.input {
+  width: 80%;
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.month__box,
+.day__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.year__error,
+.month__error,
+.day__error {
+  display: none;
+  font-size: 1.1rem;
+  color: #ff0000;
+}
+
+.error {
+  display: none;
+  text-align: center;
+  color: #ff0000;
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.button {
+  border: 0;
+  font-size: 1.2rem;
+  padding: 1rem;
+  align-self: center;
+  background-color: #343650;
+  color: #fff;
+  cursor: pointer;
+}
+#months {
+}
+#days {
+}
+
+.primary__heading {
+  font-size: 2rem;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+.countdown {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.countdown__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+.countdown__number {
+  padding: 2rem;
+  font-size: 6rem;
+  font-weight: 700;
+  transition: all 0.3s;
+
+  color: #fb6087;
+  background-color: #343650;
+}
+
+.flip {
+  animation: flip 0.5s ease-out both;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(180deg);
+  }
+}
+
+.countdown__text {
+  font-size: 1rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #fff;
+}
+.social__links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100vw;
+  height: 30vh;
+  background-image: url(../images/pattern-hills.svg);
+  background-size: cover;
+}
+
+.social__link {
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: #8385a9;
+}
+
+/* .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+} */
+
+/* 
 body {
   padding-top: 10rem;
   font-family: "Red Hat Text", sans-serif;
@@ -136,93 +293,4 @@ body {
   100% {
     transform: rotateX(0deg);
   }
-}
-
-/* 
-.container {
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-.countdown__container {
-  padding-top: 10rem;
-  background-image: url(../images/bg-stars.svg);
-  display: flex;
-  flex-direction: column;
-
-  gap: 6rem;
-}
-.primary__heading {
-  font-size: 1.7rem;
-  letter-spacing: 4px;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: #fff;
-  text-align: center;
-}
-.countdown {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-.countdown__box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5rem;
-}
-.countdown__number {
-  padding: 2rem;
-  font-size: 6rem;
-  font-weight: 700;
-  transition: all 0.3s;
-
-  color: #fb6087;
-  background-color: #343650;
-}
-
-.flip {
-  animation: flip 0.5s ease-out both;
-}
-
-@keyframes flip {
-  0% {
-    transform: rotateX(0deg);
-  }
-  100% {
-    transform: rotateX(180deg);
-  }
-}
-
-.countdown__text {
-  font-size: 1rem;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: #fff;
-}
-.social__links {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  width: 100vw;
-  height: 30vh;
-  background-image: url(../images/pattern-hills.svg);
-  background-size: cover;
-}
-
-.social__link {
-  width: 2.4rem;
-  height: 2.4rem;
-  fill: #8385a9;
-} */
-
-/* .attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
 } */
