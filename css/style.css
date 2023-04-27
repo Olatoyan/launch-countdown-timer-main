@@ -122,10 +122,6 @@ body {
 .reset:hover {
   background-color: #c52727;
 }
-#months {
-}
-#days {
-}
 
 .primary__heading {
   font-size: 2rem;
@@ -252,7 +248,5 @@ MEDIA QUERIES
 
   .secondary__heading {
     font-size: 1rem;
-  }
-  html {
   }
 }
