@@ -23,14 +23,16 @@ body {
   background-color: #191a24;
   /* background-color: #1e1f29; */
   background-image: url(../images/bg-stars.svg);
+  background-size: cover;
 }
 
 .container {
   display: flex;
-  height: 100vh;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  height: 100vh;
+  padding: 0 2rem;
 }
 .countdown__container {
   padding-top: 10rem;
@@ -110,6 +112,15 @@ body {
   background-color: #343650;
   color: #fff;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background-color: #3fa73f;
+}
+
+.reset:hover {
+  background-color: #c52727;
 }
 #months {
 }
@@ -127,6 +138,7 @@ body {
 .countdown {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 2rem;
 }
 .countdown__box {
@@ -181,124 +193,60 @@ body {
   fill: #8385a9;
 }
 
-/* .attribution {
+.attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
-} */
-
-/* 
-body {
-  padding-top: 10rem;
-  font-family: "Red Hat Text", sans-serif;
 }
 
-.countdown {
-  display: flex;
-  gap: 3rem;
-}
+/* ****************
+MEDIA QUERIES
+*******************/
 
-.time__section {
-  text-align: center;
-  font-size: 3rem;
-}
-
-.time__group {
-  display: flex;
-  gap: 1rem;
-}
-
-.time__segment {
-  display: block;
-  font-size: 10rem;
-  font-weight: 700;
-  width: 10rem;
-}
-
-.segment__display {
-  position: relative;
-  height: 100%;
-}
-
-.segment__display--top,
-.segment__display--bottom {
-  overflow: hidden;
-  text-align: center;
-  width: 100%;
-  height: 50%;
-  position: relative;
-}
-
-.segment__display--top {
-  background-color: #111;
-  color: #eee;
-  line-height: 1.5;
-}
-
-.segment__display--bottom {
-  background-color: #333;
-  color: #fff;
-  line-height: 0;
-}
-
-.segment__overlay {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 10rem;
-  perspective: 40rem;
-}
-
-.segment__overlay--top,
-.segment__overlay--bottom {
-  position: absolute;
-  overflow: hidden;
-  text-align: center;
-  width: 100%;
-  height: 50%;
-}
-
-.segment__overlay--top {
-  top: 0;
-  line-height: 1.5;
-  color: #eee;
-  background-color: #111;
-  transform-origin: bottom;
-}
-
-.segment__overlay--bottom {
-  bottom: 0;
-  line-height: 0;
-  color: #fff;
-  background-color: #333;
-  border-top: 2px solid #000;
-  transform-origin: top;
-}
-
-.segment__overlay.flip .segment__overlay--top {
-  animation: flip-top 0.8s linear;
-}
-.segment__overlay.flip .segment__overlay--bottom {
-  animation: flip-bottom 0.8s linear;
-}
-
-@keyframes flip-top {
-  0% {
-    transform: rotateX(0deg);
+@media only screen and (max-width: 50em) {
+  html {
+    font-size: 50%;
   }
-  50%,
-  100% {
-    transform: rotateX(-90deg);
+
+  .input__field {
+    display: flex;
+    justify-content: center;
+  }
+  .box {
+    width: 60%;
   }
 }
-@keyframes flip-bottom {
-  0%,
-  50% {
-    transform: rotateX(-90deg);
+@media only screen and (max-width: 37.5em) {
+  .countdown__number {
+    font-size: 4rem;
   }
-  100% {
-    transform: rotateX(0deg);
+}
+
+@media only screen and (max-width: 26.875em) {
+  .countdown__container {
+    padding-top: 4rem;
   }
-} */
+
+  .box {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 23.125em) {
+  .countdown__number {
+    font-size: 4rem;
+    padding: 1.4rem;
+  }
+
+  .primary__heading {
+    font-size: 1.5rem;
+  }
+
+  .secondary__heading {
+    font-size: 1rem;
+  }
+  html {
+  }
+}
