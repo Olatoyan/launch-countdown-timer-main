@@ -34,8 +34,8 @@ I decided to add a little functionality to the project where you can input the l
 
 ### Links
 
-- Solution URL: [Solution URL:](https://github.com/Olatoyan/launch-countdown-timer-main)
-- Live Site URL: [Live site URL here](https://toyan-launch-countdown-timer.netlify.app)
+- Solution URL: [https://github.com/Olatoyan/launch-countdown-timer-main](https://github.com/Olatoyan/launch-countdown-timer-main)
+- Live Site URL: [https://toyan-launch-countdown-timer.netlify.app](https://toyan-launch-countdown-timer.netlify.app)
 
 ## My process
 
