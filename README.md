@@ -27,15 +27,15 @@ Users should be able to:
 
 ### Screenshot
 
-I decided to add a little functionality to the projext where you can input the lanch date.
+I decided to add a little functionality to the project where you can input the lanch date.
 ![](./design/Screenshot%202023-04-27%20043049.png)
 ![](./design/Screenshot%202023-04-27%20043808.png)
 ![](./design/Screenshot%202023-04-27%20043714.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL:](https://github.com/Olatoyan/launch-countdown-timer-main)
+- Live Site URL: [Live site URL here](https://toyan-launch-countdown-timer.netlify.app)
 
 ## My process
 
