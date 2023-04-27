@@ -191,14 +191,20 @@ body {
   width: 2.4rem;
   height: 2.4rem;
   fill: #8385a9;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.social__link:hover {
+  fill: #fb6087;
 }
 
 .attribution {
-  font-size: 11px;
+  color: #fff;
+  font-size: 1.3rem;
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #3e52a3;
 }
 
 /* ****************
