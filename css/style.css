@@ -96,6 +96,7 @@ body {
 
 .btn {
   align-self: center;
+  justify-self: unset;
   display: flex;
   align-content: center;
   gap: 2rem;
