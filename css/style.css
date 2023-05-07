@@ -182,6 +182,9 @@ body {
   background-image: url(../images/pattern-hills.svg);
   background-size: cover;
 }
+.social__links {
+  display: none;
+}
 
 .social__link {
   width: 2.4rem;
@@ -218,6 +221,9 @@ MEDIA QUERIES
   }
   .box {
     width: 60%;
+  }
+  .social__links {
+    display: none;
   }
 }
 @media only screen and (max-width: 37.5em) {
