@@ -163,57 +163,6 @@ const resetCountdown = function () {
 };
 
 resetButton.addEventListener("click", resetCountdown);
-//     error.style.display = "none";
-//     monthError.style.display = "none";
-//     dayError.style.display = "none";
-//   }
-// };
-
-// const updateCountdown = function () {
-//   const month = monthInput.value;
-//   const day = dayInput.value;
-
-//   if (month === "" || day === "") {
-//     error.style.display = "block";
-//     return false;
-//   } else if (month < 1 || month > 12) {
-//     error.style.display = "none";
-//     monthError.style.display = "block";
-//     return false;
-//   } else if (day < 1 || day > 31) {
-//     error.style.display = "none";
-//     monthError.style.display = "none";
-//     dayError.style.display = "block";
-//     return false;
-//   } else {
-//     const now = new Date().getTime();
-//     const timeRemaining = countdownDate - now;
-
-//     const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-//     const hours = Math.floor(
-//       (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-//     );
-//     const minutes = Math.floor(
-//       (timeRemaining % (1000 * 60 * 60)) / (1000 * 60)
-//     );
-//     const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-
-//     daysCountdown.textContent = `${days}`.padStart(2, 0);
-//     hoursCountdown.textContent = `${hours}`.padStart(2, 0);
-//     minuteCountdown.textContent = `${minutes}`.padStart(2, 0);
-//     secondsCountdown.textContent = `${seconds}`.padStart(2, 0);
-//     return true;
-//   }
-// };
-
-// const startLaunch = function (e) {
-//   e.preventDefault();
-//   setInterval(updateCountdown, 1000);
-// };
-
-// submitButton.addEventListener("click", function () {
-//   setInterval(updateCountdown, 1000);
-// });
 
 // submitButton.addEventListener("click", getLaunchDate);
 
