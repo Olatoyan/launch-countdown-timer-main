@@ -163,37 +163,6 @@ const resetCountdown = function () {
 };
 
 resetButton.addEventListener("click", resetCountdown);
-
-// function go() {
-//   setInterval(getLaunchDate, 1000);
-// }
-
-// const countdown = setInterval(() => {
-//   getLaunchDate;
-// }, 1000);
-// const now = new Date();
-
-// const countdownDate = new Date(now.getFullYear(), monthInput - 1, dayInput);
-// // const countdownDate = new Date(2023, 5, 12).getTime();
-
-// const getLaunchDate = function () {
-//   const month = monthInput.value;
-//   const day = dayInput.value;
-
-//   if (month === "" || day === "") {
-//     error.style.display = "block";
-//     return false;
-//   } else if (month < 1 || month > 12) {
-//     error.style.display = "none";
-//     monthError.style.display = "block";
-//     month.style.border = "1px solid #ff0000";
-//     return false;
-//   } else if (day < 1 || day > 31) {
-//     error.style.display = "none";
-//     monthError.style.display = "none";
-//     dayError.style.display = "block";
-//     return false;
-//   } else {
 //     error.style.display = "none";
 //     monthError.style.display = "none";
 //     dayError.style.display = "none";
