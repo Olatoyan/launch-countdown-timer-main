@@ -131,25 +131,6 @@ const getLaunchDate = function () {
     minuteCountdown.textContent = `${minutes}`.padStart(2, 0);
     secondsCountdown.textContent = `${seconds}`.padStart(2, 0);
   }, 1000);
-  // inputs.forEach((input) => {
-  //   input.disabled = true;
-  // });
-
-  // if (countdownDate < present) {
-  //   error.style.display = "block";
-  //   inputs.forEach((input) => {
-  //     input.disabled = false;
-  //   });
-  //   return false;
-  // } else {
-  //   error.style.display = "none";
-  // }
-
-  // if (countdownDate < present) {
-  //   error.style.display = "block";
-  //   resetCountdown();
-  //   return false;
-  // }
 };
 submitButton.addEventListener("click", getLaunchDate);
 
