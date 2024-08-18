@@ -35,10 +35,13 @@ let updateCountdown;
 const getLaunchDate = function () {
   clearInterval(updateCountdown);
 
+  const day = dayInput.value;
+  const month = monthInput.value;
+  const year = yearInput.value;
+
   const now = new Date();
 
   // this is the day input
-  const day = dayInput.value;
   dayInput.value = dayInput.value.replace(/[^0-9]/g, "");
 
   if (day === "" || dayInput.value !== day) {
@@ -55,7 +58,7 @@ const getLaunchDate = function () {
   }
 
   // this is for the month input
-  const month = monthInput.value;
+
   monthInput.value = month.replace(/[^0-9]/g, "");
   const nowMonth = now.getMonth();
   if (month === "") {
@@ -66,17 +69,17 @@ const getLaunchDate = function () {
     monthError.style.display = "block";
     monthInput.style.border = "2px solid #ff5252";
     return false;
-  } else if (month < nowMonth) {
-    monthError.style.display = "block";
-    monthInput.style.border = "2px solid #ff5252";
-    return false;
+    // } else if (month < nowMonth) {
+    //   monthError.style.display = "block";
+    //   monthInput.style.border = "2px solid #ff5252";
+    //   return false;
   } else {
     monthError.style.display = "none";
     monthInput.style.border = "initial";
   }
 
   // this is for the year input
-  const year = yearInput.value;
+
   yearInput.value = year.replace(/[^0-9]/g, "");
 
   // const now = new Date();
